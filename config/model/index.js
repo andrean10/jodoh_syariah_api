@@ -1,0 +1,23 @@
+const user = require('./users');
+// const siswa = require('./siswa');
+// const absensi = require('./absensi');
+// const detail_absensi = require('./detail_absensi');
+// const status_kehadiran = require('./status_kehadiran');
+// const kelas = require('./kelas');
+// const mapel = require('./mapel');
+// const soal = require('./soal');
+// const jawaban = require('./jawaban');
+// const nilai = require('./nilai');
+const model = {};
+
+model.user = user;
+// model.siswa = siswa;
+// model.absensi = absensi;
+// model.detail_absensi = detail_absensi;
+// model.status_kehadiran = status_kehadiran;
+// model.kelas = kelas;
+// model.mapel = mapel;
+// model.soal = soal;
+// model.jawaban = jawaban;
+// model.nilai = nilai;
+module.exports = model;

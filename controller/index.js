@@ -1,0 +1,25 @@
+// const auth = require('./auth');
+const users = require('./users');
+// const siswa = require('./siswa');
+// const absensi = require('./absensi');
+// const status_kehadiran = require('./status_kehadiran');
+// const kelas = require('./kelas');
+// const mapel = require('./mapel');
+// const soal = require('./soal');
+// const jawaban = require('./jawaban');
+// const rekap_tugas = require('./rekap_tugas');
+// const nilai = require('./nilai');
+const controller = {};
+
+// controller.auth = auth;
+controller.users = users;
+// controller.siswa = siswa;
+// controller.absensi = absensi;
+// controller.status_kehadiran = status_kehadiran;
+// controller.kelas = kelas;
+// controller.mapel = mapel;
+// controller.soal = soal;
+// controller.jawaban = jawaban;
+// controller.rekap_tugas = rekap_tugas;
+// controller.nilai = nilai;
+module.exports = controller;
