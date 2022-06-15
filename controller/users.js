@@ -23,25 +23,25 @@ controller.getAll = async (req, res) => {
     }
 }
 
-// controller.getDetail = async (req, res) => {
-//     try {
-//         const result = await model.detail_absensi.findAll({
-//             where: {
-//                 id_absensi: req.params.id
-//             },
-//             include: [ 'kehadiran' ]
-//         });
+controller.getDetail = async (req, res) => {
+    try {
+        const result = await model.user.find({
+            where: {
+                id: req.params.id
+            },
+            include: [ 'kehadiran' ]
+        });
 
-//         if (result.length > 0) {
-//             response.success(res, 'Detail absensi siswa berhasil ditampilkan', result);
-//         } else {
-//             response.notFound(res, 'absensi');
-//         }
-//     } catch (error) {
-//         console.log(error);
-//         response.failed(res, error.message, 500);
-//     }
-// }
+        if (result.length > 0) {
+            response.success(res, 'Detail absensi siswa berhasil ditampilkan', result);
+        } else {
+            response.notFound(res, 'absensi');
+        }
+    } catch (error) {
+        console.log(error);
+        response.failed(res, error.message, 500);
+    }
+}
 
 // controller.add = async (req, res) => {
 //     try {
