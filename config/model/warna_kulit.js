@@ -1,0 +1,20 @@
+const Sequelize = require("sequelize");
+const conn = require("../database/connection");
+
+const WarnaKulit = conn.define(
+  "warna_kulit",
+  {
+    id: {
+      type: Sequelize.INTEGER,
+      autoIncrement: true,
+      primaryKey: true,
+    },
+    warna: Sequelize.STRING,
+  },
+  {
+    freezeTableName: true,
+    timestamps: false,
+  }
+);
+
+module.exports = WarnaKulit;

@@ -1,6 +1,7 @@
+require('dotenv').config()
 const express = require('express');
 const app = express();
-// const fileUpload = require('express-fileupload');
+const fileUpload = require('express-fileupload');
 const logger = require('morgan');   
 const PORT = 3000;
 
@@ -12,9 +13,9 @@ app.use(express.json());
 
 // dev logger
 app.use(logger('dev'));
-
+ 
 // use file upload
-// app.use(fileUpload());
+app.use(fileUpload());
 
 // all routes
 const index = require('./routes/index');
